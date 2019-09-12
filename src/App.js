@@ -18,6 +18,7 @@ class App extends Component {
                             .then(responses => responses.json())
       let characters = await response.results
       this.setState({charactersList: characters})
+      console.log(response.next)
     }
     getData()
   }

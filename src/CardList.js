@@ -5,8 +5,8 @@ const CardList = ({characterList}) => {
     
     if (characterList.length > 0) {
         let charactersArray = []
-        characterList.map(character => {
-            charactersArray.push(<Card character={character}/>)
+        characterList.forEach(character => {
+            charactersArray.push(<Card key={character.url} character={character}/>)
         })
         return (
             <div>
