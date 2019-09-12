@@ -9,7 +9,7 @@ const CardList = ({characterList}) => {
             charactersArray.push(<Card key={character.url} character={character}/>)
         })
         return (
-            <div>
+            <div className="tc cf w-100 pa2-ns">
                 {charactersArray}
             </div>
         )

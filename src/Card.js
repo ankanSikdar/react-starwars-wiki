@@ -3,14 +3,12 @@ import React from 'react'
 
 const Card = ({character}) => {
     return (
-        <div className="tc bg-blue dib br3 pa3 ma2 grow bw2 shadow-5">
-            <h3>Name: {character.name}</h3>
-            <p>Sex: {character.gender}</p>
-            <p>Birth Year: {character.birth_year}</p>
-            <p>Height/Mass: {character.height}/{character.mass}</p>
+        <div className="tc mw5 mv3 ba b--black-10 pa4-ns bg-white dib br3 pa3 ma2 dim bw2 shadow-5">
+            <p className="f3 mb2"><strong>Name:</strong> {character.name}</p>
+            <p className="f5 fw4 gray mt0"><strong>Sex:</strong> {character.gender}</p>
+            <p className="f5 fw4 gray mt0"><strong>Birth Year:</strong> {character.birth_year}</p>
+            <p className="f5 fw4 gray mt0"><strong>Height/Mass:</strong> {character.height}/{character.mass}</p>
         </div>
     )
 }
-
-
 export default Card;
