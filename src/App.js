@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import CardList from './CardList'
+import NavBar from './NavBar'
+import Footer from './Footer'
 
 const url = "https://swapi.co/api/people/"
 
@@ -26,7 +28,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+          <NavBar/>
           <CardList characterList={this.state.charactersList}/>
+          <Footer/>
       </div>
     )
   }
