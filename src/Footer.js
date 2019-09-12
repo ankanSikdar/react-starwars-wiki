@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer id="footer" className="tc black-70 bt b--black-10 pv4">
+        <footer id="footer" className="tc black-70 bt b--black-10 pv4 mw8 center">
             <div className="mb4-l cf">
                 <h1 className="w-100 f6 fw6 ttu tracked">Made With Passion</h1>
                 <article className="w-50 dib-ns w-auto-ns">
