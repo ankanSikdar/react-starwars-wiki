@@ -13,14 +13,14 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const getData = async() => {
-      let response = await fetch(url)
+    const getData = async(fetch_url) => {
+      let response = await fetch(fetch_url)
                             .then(responses => responses.json())
       let characters = await response.results
       this.setState({charactersList: characters})
-      console.log(response.next)
+      console.log(typeof(characters))
     }
-    getData()
+    getData(url)
   }
 
   render() {
