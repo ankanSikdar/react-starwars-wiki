@@ -6,7 +6,7 @@ const Footer = () => {
         <footer id="footer" className="tc black-70 bt b--black-10 pv4 center">
             <div className="mb4-l cf">
                 <h1 className="w-100 f6 fw6 ttu tracked">Made With Passion</h1>
-                <article className="w-50 dib-ns w-auto-ns">
+                <article className="w-100 dib-ns w-auto-ns">
                 <h4 className="f5 f4-l fw6">By Ankan Sikdar</h4>
                 <span className="f7 f6-l db black-70">Kolkata, West Bengal</span>
                 <span className="f7 f6-l black-70">India</span>
