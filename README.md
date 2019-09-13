@@ -1,3 +1,9 @@
+## Introduction
+This is a one page website that shows 10 Star-Wars characters. It has the functionality to search for a specific character if the name is provided in the searchbox.
+
+This project was created using [React](https://reactjs.org), designed using [Tachyons](https://tachyons.io/) and fetches the first 10 characters from [Star-Wars API](https://swapi.co/).
+It is hosted on this [GitHub Page](https://ankanSikdar.github.io/react-starwars-wiki) if you want to see it live.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
