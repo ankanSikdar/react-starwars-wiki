@@ -3,6 +3,7 @@ import './App.css';
 import CardList from './CardList'
 import NavBar from './NavBar'
 import Footer from './Footer'
+import SearchBox from './SearchBox'
 
 const url = "https://swapi.co/api/people/"
 
@@ -29,6 +30,7 @@ class App extends Component {
     return (
       <div className="App">
           <NavBar/>
+          <SearchBox/>
           <CardList characterList={this.state.charactersList}/>
           <Footer/>
       </div>
