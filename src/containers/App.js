@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
-import CardList from './CardList'
-import NavBar from './NavBar'
-import Footer from './Footer'
-import SearchBox from './SearchBox'
+import '../containers/App';
+import CardList from '../components/CardList'
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
+import SearchBox from '../components/SearchBox'
 
 const url = "https://swapi.co/api/people/"
 
