@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => {
     return (
-        <header className="bg-white black-80 tc pv3 avenir w-100">
+        <header id="navbar" className="bg-white black-80 tc pv3 avenir w-100">
             <a href="https://image.flaticon.com/icons/svg/2034/2034751.svg">
                 <img className="pa3 w3 h3" alt="LightSaber ;)" src="https://image.flaticon.com/icons/svg/2034/2034751.svg"></img>
             </a>
