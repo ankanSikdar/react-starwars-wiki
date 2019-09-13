@@ -12,6 +12,7 @@ class App extends Component {
     super()
     this.state = {
       charactersList: {},
+      searchField: "",
     }
   }
 
@@ -26,12 +27,18 @@ class App extends Component {
     getData(url)
   }
 
+  onSearch = (event) => {
+    this.setState({
+      searchField: event.target.value.toLowerCase()
+    })
+  }
+
   render() {
     return (
       <div className="App">
           <NavBar/>
-          <SearchBox/>
-          <CardList characterList={this.state.charactersList}/>
+          <SearchBox onSearch={this.onSearch}/>
+          <CardList characterList={this.state.charactersList} searchValue={this.state.searchField}/>
           <Footer/>
       </div>
     )

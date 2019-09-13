@@ -1,12 +1,14 @@
 import React from 'react'
 import Card from './Card'
 
-const CardList = ({characterList}) => {
+const CardList = ({characterList, searchValue}) => {
     
     if (characterList.length > 0) {
         let charactersArray = []
         characterList.forEach(character => {
-            charactersArray.push(<Card key={character.url} character={character}/>)
+            if(character.name.toLowerCase().includes(searchValue)) {
+                charactersArray.push(<Card key={character.url} character={character}/>)
+            }
         })
         return (
             <div className="tc cf w-100 center avenir">
